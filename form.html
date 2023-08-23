@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- ========================================= 
+        #Form
+    ==============================================  -->
+
+    <form action="" class="bob-form" id="bob-main-form">
+        <div>
+            <label for="">Desired Position</label>
+            <input type="text" placeholder="Desired Position">
+        </div>
+        <div>
+            <label for="">Experience</label>
+            <input type="text" placeholder="Experience">
+        </div>
+        <div>
+            <label for="">Question Level</label>
+            <select name="" id="">
+                <option value="" disabled selected>No Selected</option>
+                <option value="">Easy</option>
+                <option value="">Moderate</option>
+                <option value="">Advanced</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" class="bob-submit-btn">Submit</button>
+        </div>
+    </form>
+
+    <!-- ========================================= 
+        #Login
+    ==============================================  -->
+
+    <div id="bob-login">
+        <form action="" class="bob-form">
+            <div class="bob-header-cross-parent">
+                <h4>Login to The Remoter</h4>
+                <i class="fa-solid fa-xmark closs_login"></i>
+            </div>
+            <div>
+                <label for="">Email <span>*</span></label>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="">Password <span>*</span></label>
+                <div class="bob-password">
+                    <i class="fa-solid fa-eye"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="bob-checkbox-parent">
+                <div>
+                    <input type="checkbox" class="bob-checkbox" id="accept">
+                    <label for="accept">Keep me signed in</label>
+                </div>
+                <a href="" class="bob-forgotten-password">Forgotten password?</a>
+            </div>
+            <div>
+                <button type="button" class="bob-login-btn">Login</button>
+            </div>
+            <span class="bob-already-account">Don't you have an account?<a href="" class="bob-register-open"> Register</a></span>
+        </form>
+    </div>
+
+
+    <!-- ========================================= 
+        #Register
+    ==============================================  -->
+    <div id="bob-register">
+        <form action="" class="bob-form">
+            <div class="bob-header-cross-parent">
+                <h4>Create a free The Remoter account</h4>
+                <i class="fa-solid fa-xmark cross-register"></i>
+            </div>
+            <div>
+                <label for="">Email <span>*</span></label>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="">Password <span>*</span></label>
+                <div class="bob-password">
+                    <i class="fa-solid fa-eye"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+            </div>
+            <div>
+                <label for="">Confirm Password <span>*</span></label>
+                <div class="bob-password">
+                    <i class="fa-solid fa-eye"></i>
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="bob-checkbox-parent">
+                <div>
+                    <input type="checkbox" class="bob-checkbox" id="accept">
+                    <label for="accept">You accept our <a href="">Terms and Conditions and Privacy Policy</a></label>
+                </div>
+            </div>
+            <div>
+                <button type="button">Register now</button>
+            </div>
+            <span class="bob-already-account">Already have an account? <a href="" class="bob-login-open"> Login</a></span>
+        </form>
+    </div>
+    
+
+     
+
+
+    <!-- ========================================= 
+        #Forgot Password
+    ==============================================  -->
+
+    <div id="bob-forgot-password">
+        <form action="" class="bob-form">
+            <div class="bob-header-cross-parent">
+                <h4>Login to The Remoter</h4>
+                <i class="fa-solid fa-xmark cross-forgot-password"></i>
+            </div>
+            <div class="bob-reset-pass-title-parent">
+                <h4>Reset Password</h4>
+                <p>Please Enter Username or Email</p>
+            </div>
+            <div>
+                <input type="email" placeholder="Username or Email">
+            </div>
+        
+            <div>
+                <button type="button">Get New Password</button>
+            </div>
+            <span class="bob-back-login"><a href="" class="bob_back_login"> Back To Login</a></span>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

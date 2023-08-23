@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Prep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+        #Question List
+    ============================================= -->
+
+    <div id="question_list">
+        <!-- Question List Header -->
+
+        <div class="question_list_header">
+            <h3>This is question list Heading</h3>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <!-- Accordion -->
+        <div class="bob-container">
+            <div class="bob-margin">
+                <div class="bob-head">
+                    <span>1</span>
+                    <h4> Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div class="bob-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo
+                        cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas consectetur beatae quis
+                        illo bobusamus vero odit, architecto et.</p>
+                </div>
+            </div>
+
+            <div class="bob-margin">
+                <div class="bob-head">
+                    <span>2</span>
+                    <h4> Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div class="bob-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore magnam, nobis consequuntur nemo
+                        cupiditate vel sit ducimus quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam
+                        aspernatur nulla cupiditate reiciendis ut? Illum odio id odit? Tempore, ea itaque illum laborum
+                        quasi, explicabo amet veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi
+                        fugit, architecto quam! Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat
+                        voluptatem itaque suscipit. Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium
+                        officia, nulla repellat rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae
+                        culpa quibusdam doloremque fugiat consectetur beatae quis illo bobusamus vero odit, architecto
+                        et.</p>
+                </div>
+            </div>
+
+            <div class="bob-margin">
+                <div class="bob-head">
+                    <span>3</span>
+                    <h4> Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div class="bob-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque fugiat consectetur beatae
+                        quis illo bobusamus vero odit, architecto et.</p>
+                </div>
+            </div>
+
+            <div class="bob-margin">
+                <div class="bob-head">
+                    <span>4</span>
+                    <h4> Lorem ipsum dolor sit amet.</h4>
+                </div>
+                <div class="bob-content">
+                    <p>Lorem ipsum, dolor sit amet consectetur am, nobis consequuntur nemo cupiditate vel sit ducimus
+                        quisquam quaerat sint officia ad voluptas beatae eveniet. Aliquam aspernatur nulla cupiditate
+                        reiciendis ut? Illum odio id odit? Tempore, ea itaque illum laborum quasi, explicabo amet
+                        veritatis corporis dolorem minus commodi? Esse repudiandae nam eligendi fugit, architecto quam!
+                        Nostrum dolores nisi nulla repudiandae sed tempora impedit quaerat voluptatem itaque suscipit.
+                        Placeat adipisci, eius maiores blanditiis possimus culpa? Laudantium officia, nulla repellat
+                        rerum tenetur esse quos perferendis. Omnis corporis sequi, recusandae culpa quibusdam doloremque
+                        fugiat consectetur beatae quis illo bobusamus vero odit, architecto et.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <section class="pagination">
+            <button id="pg-button-prev" type="button" class="pagination__button">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <ul class="pagination__list">
+                <li class="pagination__item pagination__item--1">
+                    <button id="pg-button-1" type="button">1</button>
+                </li>
+                <li class="pagination__item pagination__item--2">
+                    <button id="pg-button-2" type="button">2</button>
+                </li>
+                <li class="pagination__item pagination__item--3">
+                    <button id="pg-button-3" type="button">3</button>
+                </li>
+                <li class="pagination__item pagination__item--4">
+                    <button id="pg-button-4" type="button">4</button>
+                </li>
+                <li class="pagination__item pagination__item--5">
+                    <button id="pg-button-5" type="button">5</button>
+                </li>
+            </ul>
+
+            <button id="pg-button-next" type="button" class="pagination__button">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

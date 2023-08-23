@@ -1,0 +1,685 @@
+/* ========================================= 
+    #Form style
+============================================  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bob-main-font: 'Montserrat', sans-serif;
+}
+
+.bob-form {
+    width: 600px;
+    max-width: calc(100% - 20px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    height: auto;
+}
+
+.bob-form>div:not(.bob-header-cross-parent) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.bob-form>div input:not(.bob-checkbox),
+.bob-form>div select,
+.bob-form>div button {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: unset;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: #F0F5F7;
+    color: #77838F;
+    height: 60px;
+    font-family: var(--bob-main-font);
+    font-weight: 400;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.bob-form>div input:focus,
+.bob-form>div select:focus {
+    background: transparent;
+    border: 1px solid #38b6ff;
+}
+
+.bob-form>div label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #202124;
+    font-family: var(--bob-main-font);
+    margin-bottom: 8px;
+}
+
+.bob-form>div label span {
+    color: red;
+}
+
+.bob-form>div button {
+    background: #38b6ff;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.bob-form .bob-password {
+    width: 100%;
+    position: relative;
+}
+
+.bob-form .bob-password .fa-solid {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+    cursor: pointer;
+    display: block;
+}
+
+.bob-form .bob-password .fa-solid:hover {
+    color: #38b6ff;
+}
+
+.bob-form .bob-checkbox-parent a {
+    color: #202124;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: (--bob-main-font);
+    transition: .5s;
+}
+
+.bob-form .bob-checkbox-parent {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.bob-form .bob-checkbox-parent label {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.bob-form .bob-checkbox-parent div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bob-form .bob-checkbox-parent a:hover {
+    color: #38b6ff;
+}
+
+.bob-form .bob-already-bobount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--bob-main-font);
+}
+
+.bob-form .bob-already-bobount a {
+    font-size: 16px;
+    font-family: var(--bob-main-font);
+    font-weight: 600;
+    color: #38b6ff;
+    display: block;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .bob-form {
+        padding: 15px;
+    }
+
+    .bob-form .bob-checkbox-parent a,
+    .bob-form>div label,
+    .bob-form .bob-already-bobount a,
+    .bob-form .bob-already-bobount,
+    .bob-form>div input:not(.bob-checkbox),
+    .bob-form>div select,
+    .bob-form>div button {
+        font-size: 14px;
+    }
+
+    .bob-form>div {
+        margin-bottom: 12px;
+    }
+}
+
+.bob-header-cross-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bob-header-cross-parent h4 {
+    font-size: 20px;
+}
+
+.bob-header-cross-parent i {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.bob-header-cross-parent i:hover {
+    color: #38b6ff;
+}
+
+.bob-reset-pass-title-parent h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bob-reset-pass-title-parent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #77838F;
+}
+
+.bob-back-login a {
+    font-size: 16px;
+    color: #202124;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .bob-back-login a {
+        font-size: 14px;
+    }
+}
+
+#bob-forgot-password,
+#bob-register,
+#bob-login {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.368);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000000;
+}
+
+#bob-main-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/* ========================================= 
+    #Question List
+============================================  */
+
+#question_list {
+    width: 800px;
+    max-width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+#question_list .bob-container {
+    width: 100%;
+}
+
+.bob-margin {
+    margin-bottom: 10px;
+}
+
+.bob-margin:last-child {
+    margin-bottom: 0px;
+}
+
+.bob-head {
+    background-color: #38b6ff;
+    padding: 8px 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* .bob-head::before,
+.bob-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.bob-head::before {
+    right: 30px;
+    width: 3px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.bob-head::after {
+    right: 21px;
+    width: 20px;
+    height: 3px;
+    margin-top: -2px;
+} */
+
+.bob-content {
+    padding: 15px 10px;
+    display: none;
+    border: 1px solid #38b6ff;
+}
+
+.bob-head.bob-active::before {
+    transform: rotate(90deg);
+}
+
+.bob-margin .bob-head h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.bob-margin .bob-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bob-margin .bob-head span {
+    min-width: 40px;
+    height: 40px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+/* Pagination */
+
+.visible-hidden {
+    visibility: hidden;
+}
+
+.pagination {
+    width: 400px;
+    height: 60px;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.pagination,
+.pagination__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagination__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 350;
+    height: 50px;
+    border-radius: 9px;
+    margin: 0 9px;
+    overflow: hidden;
+}
+
+.pagination__item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.1rem;
+}
+
+.pagination__item>button,
+.pagination__button {
+    border: none;
+    outline: none;
+    stroke: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 9px;
+    background: #38b6ff2d;
+    color: #38b6ff;
+}
+
+.pagination__item>button:hover,
+.pagination__button:hover {
+    background: #38b6ff;
+    color: #fff;
+}
+
+.pagination__item>button {
+    width: 45px;
+    height: 45px;
+}
+
+.pagination__item>button[data-level=target] {
+    background: #38b6ff;
+    color: #fff;
+}
+
+.pagination--move-prev {
+    -webkit-animation: pagination-move-prev 0.5s ease both;
+    animation: pagination-move-prev 0.5s ease both;
+}
+
+.pagination--move-next {
+    -webkit-animation: pagination-move-next 0.5s ease both;
+    animation: pagination-move-next 0.5s ease both;
+}
+
+.pagination--move-top {
+    -webkit-animation: pagination-move-top 0.5s ease both;
+    animation: pagination-move-top 0.5s ease both;
+}
+
+.pagination__button {
+    width: 35px;
+    height: 35px;
+}
+
+@-webkit-keyframes pagination-move-prev {
+
+    from,
+    0% {
+        transform: translateX(25px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    to,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pagination-move-prev {
+
+    from,
+    0% {
+        transform: translateX(25px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    to,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes pagination-move-next {
+
+    from,
+    0% {
+        transform: translateX(-25px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    to,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pagination-move-next {
+
+    from,
+    0% {
+        transform: translateX(-25px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    to,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes pagination-move-top {
+
+    from,
+    0% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    to,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pagination-move-top {
+
+    from,
+    0% {
+        transform: translateY(-25px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    to,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Question list header */
+
+.question_list_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.question_list_header h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--bob-main-font);
+    flex-basis: calc(60% - 20px);
+}
+
+.question_list_header input {
+    background: #38b6ff2d;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    outline: unset;
+    flex-basis: 40%;
+    transition: .5s;
+    caret-color: #38b6ff;
+}
+
+.question_list_header input:focus {
+    border: 1px solid #38b6ff;
+}
+
+@media screen and (max-width: 768px) {
+    .question_list_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .question_list_header input,
+    .question_list_header h3 {
+        width: 100%;
+    }
+
+    .question_list_header h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pagination__item>button {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .pagination__item {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ================================================
+    # Data table
+=================================================== */
+
+#bob-data-table {
+    width: 800px;
+    max-width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#bob-data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bob-data-table tr:nth-of-type(odd) {
+    background: #38b6ff2d;
+}
+
+#bob-data-table th {
+    background: #38b6ff;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: var(--bob-main-font);
+}
+
+#bob-data-table td,
+#bob-data-table th {
+    padding: 10px;
+    border: 1px solid #38b6ff;
+    text-align: left;
+    font-size: 18px;
+}
+
+#bob-data-table td {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--bob-main-font);
+}
+
+@media screen and (max-width: 576px) {
+
+    #bob-data-table table {
+        width: 100%;
+    }
+
+    #bob-data-table table,
+    #bob-data-table thead,
+    #bob-data-table tbody,
+    #bob-data-table th,
+    #bob-data-table td,
+    #bob-data-table tr {
+        display: block;
+    }
+
+    #bob-data-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #bob-data-table tr {
+        border: 1px solid #38b6ff;
+    }
+
+    #bob-data-table td {
+        border: none;
+        border-bottom: 1px solid #38b6ff;
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: -1px;
+    }
+
+    #bob-data-table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        content: attr(data-column);
+        color: #000;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
